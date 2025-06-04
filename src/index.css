@@ -23,8 +23,8 @@ body {
   text-align: center;
 }
 .profile_name {
-  font-weight: 400;
-  font-size: 22px;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 .edit-profile{
@@ -33,6 +33,13 @@ body {
 .pencil-icon{
   margin-right: 5px;
 }
+
+.love-icon:hover{
+ cursor: pointer;
+}
+
+
+
 
 /* New post button */
 .btn{
@@ -46,6 +53,10 @@ body {
   align-self: center;
   border: none;
   border-radius: 5px;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: rgb(95, 93, 93);
 }
 .plus-icon{
   width: 12px;
@@ -94,7 +105,7 @@ footer{
 @media (min-width: 768px ) and (max-width:850px){
 
   body{
-    margin: 20px;
+    margin: 20px ;
   }
   .card-container{
    display: grid;
@@ -107,24 +118,42 @@ footer{
 
 @media (min-width: 851px ) {
 
-  /* .profile-wrapper{
+  .profile-wrapper{
     display: flex;
     justify-content: space-between;
+    
   }
 
   .btn{
-    width: 150px;
+    width: 120px;
+    margin-top: auto;
   }
 
   .profile{
-    width: ;
-  } */
+    width: 80%;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: left;
+    align-items: end;
+    
+  }
+
+  .profile img{
+    width: 240px;
+  }
+
+  .profile_text{
+    width: 430px;
+    text-align: left;
+
+  }
 
 
 
   /*  */
   body{
-    margin: 20px;
+    margin: 20px 50px;
   }
   .card-container{
    display: grid;
