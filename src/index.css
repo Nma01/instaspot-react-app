@@ -30,6 +30,9 @@ body {
 .edit-profile{
   margin-top: 25px;
 }
+.edit-profile:hover{
+  cursor: pointer;
+}
 .pencil-icon{
   margin-right: 5px;
 }
