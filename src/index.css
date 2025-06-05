@@ -3,21 +3,37 @@
 body {
   font-family: 'Poppins', sans-serif;
   padding: 10px 10px 0;
-
+  color: #212121b2;
+  color: #212121;
 }
+
+
+.love-icon-test{
+  /* background-color: red; */
+  border: 2px solid purple;
+}
+
+
+
+
 
 .logo {
   text-align: center;
 }
 
 /* Profile section */
+.profile-wrapper {
+  margin: 10px 0 5px;
+}
 .profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 0 5px;
+
+  /* margin-top: auto; */
 }
+
 .profile_text {
   line-height: 1.25;
   text-align: center;
@@ -26,46 +42,57 @@ body {
   font-weight: 500;
   font-size: 25px;
 }
+.profile_bio {
+  color: #212121b2;
+}
 
-.edit-profile{
-  margin-top: 25px;
+.edit-profile {
+  margin: 25px 0 10px;
+  color: #212121b2;
+  margin-top: auto;
 }
-.edit-profile:hover{
+.btn2 {
+  border: none;
+  /* width: 130px;
+  border-radius: 5px; */
+}
+.edit-profile:hover {
   cursor: pointer;
+
+  color: #212121;
 }
-.pencil-icon{
+.pencil-icon {
   margin-right: 5px;
 }
-
-.love-icon:hover{
- cursor: pointer;
+.love-icon {
+  color: red;
+}
+.love-icon:hover {
+  cursor: pointer;
 }
 
-
-
-
 /* New post button */
-.btn{
-  background-color: black;
+.btn {
+  background-color: #212121;
   padding: 10px 15px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7px;  
+  gap: 7px;
   align-self: center;
   border: none;
   border-radius: 5px;
 }
-.btn:hover{
+.btn:hover {
   cursor: pointer;
-  background-color: rgb(95, 93, 93);
+  background-color: #212121b2;
 }
-.plus-icon{
+.plus-icon {
   width: 12px;
   height: 12px;
 }
-.btn-text{
+.btn-text {
   font-size: 16px;
   color: white;
   line-height: 1;
@@ -73,28 +100,28 @@ body {
 
 /* hr */
 
-hr{
-  margin: 20px 0; 
+hr {
+  margin: 20px 0;
 }
 
 /* cards */
 
-.card-wrapper{
+.card-wrapper {
   display: flex;
   flex-direction: column;
   margin: 15px 0;
 }
-.card-photo{
+.card-photo {
   border-radius: 5px;
   width: 100%;
 }
-.card-details{
+.card-details {
   display: flex;
   justify-content: space-between;
 }
 
 /* footer */
-footer{
+footer {
   margin: 30px 0;
   font-weight: 200;
   text-align: center;
@@ -102,74 +129,55 @@ footer{
 }
 
 /* Media queries */
-@media (min-width: 768px ){
-  
-}
-@media (min-width: 768px ) and (max-width:850px){
 
-  body{
-    margin: 20px ;
+@media (min-width: 768px) and (max-width: 850px) {
+  body {
+    margin: 20px;
   }
-  .card-container{
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   gap: 10px;
-    
-
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 
-@media (min-width: 851px ) {
-
-  .profile-wrapper{
+@media (min-width: 851px) {
+  .profile-wrapper {
     display: flex;
     justify-content: space-between;
-    
   }
 
-  .btn{
+  .btn {
     width: 120px;
     margin-top: auto;
+    margin-bottom: 10px;
   }
 
-  .profile{
+  .profile {
     width: 80%;
     display: flex;
     gap: 15px;
     flex-direction: row;
     justify-content: left;
     align-items: end;
-    
   }
 
-  .profile img{
+  .profile img {
     width: 240px;
   }
 
-  .profile_text{
+  .profile_text {
     width: 430px;
     text-align: left;
-
   }
-
-
 
   /*  */
-  body{
+  body {
     margin: 20px 50px;
   }
-  .card-container{
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   gap: 10px;
-    
-
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
 }
-
-
-
-
-
-
-

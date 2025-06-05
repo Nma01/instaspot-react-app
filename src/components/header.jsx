@@ -9,11 +9,8 @@ function Header() {
         <img src="/images/Logo-1.svg" alt="logo" />
       </div>
       <Profile />
-
+      {/* <CardContainer /> */}
       <hr />
-      <CardContainer />
-      <hr />
-      <Footer />
     </>
   );
 }
@@ -22,7 +19,7 @@ export default Header;
 
 function Profile() {
   return (
-    <div className='profile-wrapper'>
+    <div className="profile-wrapper">
       <div className="profile">
         <img src="/images/Avatar.png" alt="Avatar" width={80} />
         <div class="profile_text">
@@ -34,14 +31,14 @@ function Profile() {
             singer, record producer, and entrepreneur. An influential figure in
             modern world...
           </p>
-          <div className="edit-profile">
+          <button className="edit-profile btn2">
             <p>
               <span className="pencil-icon">
                 <FontAwesomeIcon icon={faPencil} />
               </span>
               <span> Edit Profile</span>
             </p>
-          </div>
+          </button>
         </div>
       </div>
       <Button />
@@ -62,56 +59,4 @@ function Button() {
       </button>
     </>
   );
-}
-
-function CardContainer() {
-  return (
-    <div className="card-container">
-      <Card
-        name="Val Thorens"
-        photoName="/images/pexels-kassandre-pedro-8639743 1-6.png"
-        unionIcon="/images/Union.svg"
-      />
-      <Card
-        name="Restaurant terrace"
-        photoName="/images/pexels-kassandre-pedro-8639743 1-1.png"
-        unionIcon="images/Union.svg"
-      />
-      <Card
-        name="An outdoor cafe"
-        photoName="/images/pexels-kassandre-pedro-8639743 1-2.png"
-        unionIcon="images/Union.svg"
-      />
-      <Card
-        name="A very long bridge, over the forest..."
-        photoName="/images/pexels-kassandre-pedro-8639743 1-3.png"
-        unionIcon="images/Union.svg"
-      />
-      <Card
-        name="Tunnel with morning light"
-        photoName="/images/pexels-kassandre-pedro-8639743 1-4.png"
-        unionIcon="images/Union.svg"
-      />
-      <Card
-        name="Mountain house"
-        photoName="/images/pexels-kassandre-pedro-8639743 1-5.png"
-        unionIcon="images/Union.svg"
-      />
-    </div>
-  );
-}
-function Card({ name, photoName, unionIcon }) {
-  return (
-    <div className="card-wrapper">
-      <img className="card-photo" src={photoName} alt="photo" />
-      <div className="card-details">
-        <p>{name}</p>
-        <img className="love-icon" src={unionIcon} alt="love icon" />
-      </div>
-    </div>
-  );
-}
-
-function Footer() {
-  return <footer>2024 &copy; Spots</footer>;
 }
