@@ -24,16 +24,18 @@ function Profile({ openModal, profileData }) {
       <div className="profile-wrapper">
         <div className="profile">
           <img
-            src={image ? URL.createObjectURL(image) : '/images/Avatar.png'}
+            src={image ? URL.createObjectURL(image) : '/images/Avatar-1.png'}
             alt="Avatar"
-            width={80}
+            width={100}
           />
           <div className="profile_text">
             <h1 className="profile_name">
-              {name || "Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon..."}
+              {name ||
+                'Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon...'}
             </h1>
             <p className="profile_bio">
-              {bio || `Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American
+              {bio ||
+                `Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American
               singer, record producer, and entrepreneur. An influential figure
               in modern world...`}
             </p>
@@ -47,17 +49,17 @@ function Profile({ openModal, profileData }) {
             </button>
           </div>
         </div>
-        <Button />
+        <Button openModal={openModal} />
       </div>
     </>
   );
 }
 
 // Button component
-function Button() {
+function Button({ openModal }) {
   return (
     <>
-      <button className="btn">
+      <button onClick={openModal} className="btn">
         <img
           className="plus-icon"
           src="/images/Group 26.svg"
