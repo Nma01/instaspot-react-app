@@ -41,8 +41,8 @@ const cards = [
 function CardContainer() {
   return (
     <div className="card-container">
-      {cards.map((card) => (
-        <Card cardObj={card} />
+      {cards.map((card, index) => (
+        <Card key={index} cardObj={card} />
       ))}
     </div>
   );
